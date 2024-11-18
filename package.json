@@ -16,6 +16,7 @@
     "@tailwindcss/line-clamp": "^0.4.4",
     "@tailwindcss/typography": "^0.5.15",
     "vue": "^3.5.12",
+    "vue-router": "^4.4.5",
     "vue-smooth-scroll": "^1.0.13"
   },
   "devDependencies": {
