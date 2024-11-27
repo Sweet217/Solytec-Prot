@@ -2,7 +2,22 @@
   <!--Page 2-->
   <div class="flex flex-col items-center min-h-screen bg-white" id="nacimiento">
     <!-- Header Section -->
-    <header class="w-full p-0 pb-10 text-left ml-40">
+    <header class="w-full p-0 pb-10 flex items-center">
+      <!-- Botón de retroceso -->
+      <a href="/" class="ml-4 mr-4 text-gray-600 hover:text-gray-800">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+      </a>
+
+      <!-- Logo de Solytec -->
       <img
         src="./images/solyteclogo.png"
         alt="Solytec Logo"
@@ -22,16 +37,16 @@
     <!-- Main Content Section -->
     <main class="w-full max-w-4xl px-8 py-5 bg-gray-50 rounded shadow mt-10">
       <div class="text-left mb-5">
-        <h1 class="text-3xl font-bold text-gray-500">Acta de Nacimiento</h1>
+        <h1 class="text-4xl font-bold text-gray-500">Acta de Nacimiento</h1>
       </div>
 
       <!-- CURP Input -->
       <div class="mb-4">
-        <label class="text-lg font-semibold">CURP</label>
+        <label class="text-xl font-semibold">CURP</label>
         <input
           type="text"
           v-model="curp"
-          class="w-full p-2 mt-1 border border-gray-300 rounded placeholder-blue-500"
+          class="text-xl w-full p-2 mt-1 border border-gray-300 rounded placeholder-blue-500"
           placeholder="Ingrese CURP"
         />
       </div>
@@ -39,14 +54,14 @@
       <!-- Número de Copias and Total -->
       <div class="flex items-center justify-between mb-4">
         <div class="flex items-center">
-          <label class="text-lg font-semibold mr-2">Número de Copias</label>
+          <label class="text-xl font-semibold mr-2">Número de Copias</label>
           <button @click="decrementCopies" class="p-2 bg-gray-200 rounded">-</button>
-          <span class="px-4">{{ numberOfCopies }}</span>
+          <span class="text-xl px-4">{{ numberOfCopies }}</span>
           <button @click="incrementCopies" class="p-2 bg-gray-200 rounded">+</button>
         </div>
         <div class="text-right">
-          <p class="text-2xl font-bold">TOTAL</p>
-          <p class="text-3xl font-bold text-red-500">${{ total }}</p>
+          <p class="text-3xl font-bold">TOTAL</p>
+          <p class="text-4xl font-bold text-red-500">${{ total }}</p>
         </div>
       </div>
 
