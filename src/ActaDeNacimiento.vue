@@ -3,7 +3,12 @@
   <div class="flex flex-col items-center min-h-screen bg-white" id="nacimiento">
     <!-- Header Section -->
     <header class="w-full p-0 pb-10 text-left ml-40">
-      <img src="./images/solyteclogo.png" alt="Solytec Logo" class="mx-auto mr-20" style="width:200px" />
+      <img
+        src="./images/solyteclogo.png"
+        alt="Solytec Logo"
+        class="mx-auto mr-20"
+        style="width: 200px"
+      />
     </header>
 
     <div class="w-full p-0 pb-10 flex flex-col items-end text-right mr-20">
@@ -26,7 +31,7 @@
         <input
           type="text"
           v-model="curp"
-          class="w-full p-2 mt-1 border border-gray-300 rounded"
+          class="w-full p-2 mt-1 border border-gray-300 rounded placeholder-blue-500"
           placeholder="Ingrese CURP"
         />
       </div>
@@ -47,68 +52,72 @@
 
       <!-- Datos de la Persona Registrada -->
       <div class="border-t border-gray-300 pt-4 mb-4">
-        <h2 class="text-lg font-semibold text-gray-500">Datos de la Persona Registrada</h2>
+        <h2 class="text-lg font-semibold text-gray-500">
+          Datos de la Persona Registrada
+        </h2>
         <div class="grid grid-cols-3 gap-4 mt-3">
           <div>
-            <label class="text-sm font-semibold">Nombre(s)</label>
-            <input type="text" v-model="nombre" class="p-2 border border-gray-300 rounded w-full" />
+            <label class="text-sm font-semibold block">Nombre(s):</label>
+            <span class="block text-gray-600">---</span>
           </div>
           <div>
-            <label class="text-sm font-semibold">Primer Apellido</label>
-            <input type="text" v-model="primerApellido" class="p-2 border border-gray-300 rounded w-full" />
+            <label class="text-sm font-semibold block">Primer Apellido:</label>
+            <span class="block text-gray-600">---</span>
           </div>
           <div>
-            <label class="text-sm font-semibold">Segundo Apellido</label>
-            <input type="text" v-model="segundoApellido" class="p-2 border border-gray-300 rounded w-full" />
+            <label class="text-sm font-semibold block">Segundo Apellido:</label>
+            <span class="block text-gray-600">---</span>
           </div>
         </div>
       </div>
 
       <!-- Datos de Filiación de la Persona Registrada -->
       <div class="border-t border-gray-300 pt-4 mb-4">
-        <h2 class="text-lg font-semibold text-gray-500">Datos de Filiación de la Persona Registrada</h2>
+        <h2 class="text-lg font-semibold text-gray-500">
+          Datos de Filiación de la Persona Registrada
+        </h2>
         <div class="grid grid-cols-5 gap-4 mt-3">
           <div>
-            <label class="text-sm font-semibold">Nombre(s)</label>
-            <input type="text" class="p-2 border border-gray-300 rounded w-full" />
+            <label class="text-sm font-semibold block">Nombre(s):</label>
+            <span class="block text-gray-600">---</span>
           </div>
           <div>
-            <label class="text-sm font-semibold">Primer Apellido</label>
-            <input type="text" class="p-2 border border-gray-300 rounded w-full" />
+            <label class="text-sm font-semibold block">Primer Apellido:</label>
+            <span class="block text-gray-600">---</span>
           </div>
           <div>
-            <label class="text-sm font-semibold">Segundo Apellido</label>
-            <input type="text" class="p-2 border border-gray-300 rounded w-full" />
+            <label class="text-sm font-semibold block">Segundo Apellido:</label>
+            <span class="block text-gray-600">---</span>
           </div>
           <div>
-            <label class="text-sm font-semibold">Nacionalidad</label>
-            <input type="text" class="p-2 border border-gray-300 rounded w-full" />
+            <label class="text-sm font-semibold block">Nacionalidad:</label>
+            <span class="block text-gray-600">---</span>
           </div>
           <div>
-            <label class="text-sm font-semibold">CURP</label>
-            <input type="text" placeholder="CURP" class="p-2 border border-gray-300 rounded w-full" />
+            <label class="text-sm font-semibold block">CURP:</label>
+            <span class="block text-gray-600">---</span>
           </div>
         </div>
         <div class="grid grid-cols-5 gap-4 mt-3">
           <div>
-            <label class="text-sm font-semibold">Nombre(s)</label>
-            <input type="text" class="p-2 border border-gray-300 rounded w-full" />
+            <label class="text-sm font-semibold block">Nombre(s):</label>
+            <span class="block text-gray-600">---</span>
           </div>
           <div>
-            <label class="text-sm font-semibold">Primer Apellido</label>
-            <input type="text" class="p-2 border border-gray-300 rounded w-full" />
+            <label class="text-sm font-semibold block">Primer Apellido:</label>
+            <span class="block text-gray-600">---</span>
           </div>
           <div>
-            <label class="text-sm font-semibold">Segundo Apellido</label>
-            <input type="text" class="p-2 border border-gray-300 rounded w-full" />
+            <label class="text-sm font-semibold block">Segundo Apellido:</label>
+            <span class="block text-gray-600">---</span>
           </div>
           <div>
-            <label class="text-sm font-semibold">Nacionalidad</label>
-            <input type="text" class="p-2 border border-gray-300 rounded w-full" />
+            <label class="text-sm font-semibold block">Nacionalidad:</label>
+            <span class="block text-gray-600">---</span>
           </div>
           <div>
-            <label class="text-sm font-semibold">CURP</label>
-            <input type="text" placeholder="CURP" class="p-2 border border-gray-300 rounded w-full" />
+            <label class="text-sm font-semibold block">CURP:</label>
+            <span class="block text-gray-600">---</span>
           </div>
         </div>
       </div>
@@ -120,10 +129,11 @@
       </div>
     </main>
 
-    <p class="mt-40 text-3xl text-gray-400 mt-10 mb-6">Línea de ayuda: +52 (312) 107 2845</p>
-
-    <footer class="w-full text-center mt-20">
-      <img src="./images/footer.png" alt="Solytec Logo" class="mx-auto" style="margin-right: 0px; width: 100%" />
+    <footer class="mt-auto w-full">
+      <p class="text-4xl text-gray-500 text-center py-4">
+        Línea de ayuda: +52 (312) 107 2845
+      </p>
+      <img src="./images/footer.png" alt="Footer Image" class="w-full" />
     </footer>
   </div>
 </template>
@@ -132,10 +142,10 @@
 export default {
   data() {
     return {
-      curp: '',
-      nombre: '',
-      primerApellido: '',
-      segundoApellido: '',
+      curp: "",
+      nombre: "",
+      primerApellido: "",
+      segundoApellido: "",
       numberOfCopies: 1,
       pricePerCopy: 125,
     };
@@ -147,7 +157,7 @@ export default {
   },
   methods: {
     scrollToSection(sectionId) {
-      document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+      document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
     },
     incrementCopies() {
       this.numberOfCopies++;

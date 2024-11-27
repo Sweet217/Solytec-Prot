@@ -35,8 +35,8 @@
         <input
           type="text"
           v-model="placa"
-          @input="checkPlaca"
-          class="w-full p-2 mt-2 border border-gray-300 rounded"
+          @change="handlePlacaInput"
+          class="w-full p-2 mt-2 border border-gray-300 rounded placeholder-blue-500"
           placeholder="Ingrese número de placa o Número de Identificación Vehicular"
         />
       </div>
@@ -92,9 +92,9 @@
     </main>
 
     <!-- Footer -->
-    <p class="text-xl text-gray-500" style="margin-top: 360px;">Línea de ayuda: +52 (312) 107 2845</p>
-    <footer class="w-full mt-20">
-      <img src="./images/footer.png" alt="Footer Image" class="w-full"/>
+    <footer class="mt-auto w-full">
+      <p class="text-4xl text-gray-500 text-center py-4">Línea de ayuda: +52 (312) 107 2845</p>
+      <img src="./images/footer.png" alt="Footer Image" class="w-full" />
     </footer>
   </div>
 </template>
@@ -113,13 +113,38 @@ export default {
     scrollToSection(sectionId) {
       document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
     },
+    handlePlacaInput(){
+      this.checkPlaca()
+      this.playAudio10()
+    },
     checkPlaca() {
       if (this.placa === 'M1G-3T8' || this.placa === "15928123945") {
         this.mostrarInformacion = true;
+        this.playAudio()
+        this.playAudio3()
       } else {
         this.mostrarInformacion = false;
+        this.playAudio11()
       }
     },
+    playAudio() {
+        const audio = new Audio('./audios/audio2.mp3'); 
+        audio.play();
+    },
+    playAudio3() {
+        const audio3 = new Audio('./audios/audio3.mp3'); 
+        setTimeout(() => {
+          audio3.play();
+        }, 3000);
+    },
+    playAudio10() {
+      const audio10 = new Audio('./audios/audio10.mp3');
+      audio10.play()
+    },
+    playAudio11() {
+      const audio10 = new Audio('./audios/audio11.mp3');
+      audio10.play()
+    }
   },
 };
 </script>

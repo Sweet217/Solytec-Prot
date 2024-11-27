@@ -44,21 +44,28 @@
         </div>
       </main>
   
-      <p class="mt-20 text-3xl text-gray-400 mt-4">Línea de ayuda: +52 (312) 107 2845</p>
-  
-      <footer class="w-full text-center">
-        <img src="./images/footer.png" alt="Solytec Logo" class="mx-auto" style="margin-right: 0px; width: 100% "/>
+      <footer class="mt-auto w-full">
+        <p class="text-4xl text-gray-500 text-center py-4">Línea de ayuda: +52 (312) 107 2845</p>
+        <img src="./images/footer.png" alt="Footer Image" class="w-full" />
       </footer>
     </div>
-  </template>
+</template>
   
 <script>
   export default {
+    mounted() {
+      this.playAudio();
+    },
     methods: {
       goToPage(pageName) {
         this.$router.push({ name: pageName });
+      },
+      playAudio() {
+        const audio = new Audio('./audios/audio1.mp3'); 
+        audio.play();
       }
     }
-  }
-  </script>
+  };
+</script>
+  
   
