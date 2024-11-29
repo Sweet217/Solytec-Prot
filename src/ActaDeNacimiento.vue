@@ -2,7 +2,7 @@
   <!--Page 2-->
   <div class="flex flex-col items-center min-h-screen bg-white" id="nacimiento">
     <!-- Header Section -->
-    <header class="w-full p-0 pb-10 flex items-center">
+    <header class="w-full p-0 pb-10 flex items-center justify-between">
       <!-- Botón de retroceso -->
       <a href="/" class="ml-4 mr-4 text-gray-600 hover:text-gray-800">
         <svg
@@ -21,7 +21,7 @@
       <img
         src="./images/solyteclogo.png"
         alt="Solytec Logo"
-        class="mx-auto mr-20"
+        class="ml-auto"
         style="width: 200px"
       />
     </header>

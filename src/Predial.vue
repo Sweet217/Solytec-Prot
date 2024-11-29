@@ -2,7 +2,7 @@
   <!--Page 3-->
   <div class="flex flex-col items-center min-h-screen bg-white" id="predial">
     <!-- Header Section -->
-    <header class="w-full p-0 pb-10 flex items-center">
+    <header class="w-full p-0 pb-10 flex items-center justify-between">
       <!-- Botón de retroceso -->
       <a href="/" class="ml-4 mr-4 text-gray-600 hover:text-gray-800">
         <svg
@@ -21,7 +21,7 @@
       <img
         src="./images/solyteclogo.png"
         alt="Solytec Logo"
-        class="mx-auto mr-20"
+        class="ml-auto"
         style="width: 200px"
       />
     </header>
@@ -158,21 +158,21 @@ export default {
       }
     },
     playAudio() {
-      const audio = new Audio("./audios/audio2.mp3");
+      const audio = new Audio("./public/audios/audio2.mp3");
       audio.play();
     },
     playAudio3() {
-      const audio3 = new Audio("./audios/audio3.mp3");
+      const audio3 = new Audio("./public/audios/audio3.mp3");
       setTimeout(() => {
         audio3.play();
       }, 3000);
     },
-    playAudio10() {
-      const audio10 = new Audio("./audios/audio10.mp3");
-      audio10.play();
-    },
+    // playAudio10() {
+    //   const audio10 = new Audio("./public/audios/audio10.mp3");
+    //   audio10.play();
+    // },
     playAudio11() {
-      const audio10 = new Audio("./audios/audio11.mp3");
+      const audio10 = new Audio("./public/audios/audio11.mp3");
       audio10.play();
     },
   },
