@@ -149,11 +149,11 @@ export default {
       }
     },
     playAudio() {
-      const audio = new Audio("./public/audios/audio2.mp3");
+      const audio = new Audio("./audios/audio2.mp3");
       audio.play();
     },
     playAudio3() {
-      const audio3 = new Audio("./public/audios/audio3.mp3");
+      const audio3 = new Audio("./audios/audio3.mp3");
       setTimeout(() => {
         audio3.play();
       }, 3000);
@@ -163,7 +163,7 @@ export default {
     //   audio10.play();
     // },
     playAudio11() {
-      const audio10 = new Audio("./public/audios/audio11.mp3");
+      const audio10 = new Audio("./audios/audio11.mp3");
       audio10.play();
     },
   },

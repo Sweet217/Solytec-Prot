@@ -70,7 +70,7 @@ export default {
       this.$router.push({ name: pageName });
     },
     playAudio() {
-      const audio = new Audio("./public/audios/audio1.mp3");
+      const audio = new Audio("./audios/audio1.mp3");
       audio.play();
     },
   },
