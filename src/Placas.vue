@@ -2,29 +2,7 @@
   <!--Page 4-->
   <div class="flex flex-col items-center min-h-screen bg-white" id="placas">
     <!-- Header Section -->
-    <header class="w-full p-0 pb-10 flex items-center justify-between">
-      <!-- Botón de retroceso -->
-      <a href="/" class="ml-4 mr-4 text-gray-600 hover:text-gray-800">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="2"
-          stroke="currentColor"
-          class="w-6 h-6"
-        >
-          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
-        </svg>
-      </a>
-
-      <!-- Logo de Solytec -->
-      <img
-        src="./images/solyteclogo.png"
-        alt="Solytec Logo"
-        class="ml-auto"
-        style="width: 200px"
-      />
-    </header>
+    <HeaderComponent></HeaderComponent>
 
     <div class="w-full p-0 pb-10 flex flex-col items-end text-right mr-20">
       <p class="text-lg font-semibold">Pagar con</p>
@@ -110,19 +88,19 @@
         </div>
       </div>
     </main>
-
     <!-- Footer -->
-    <footer class="mt-auto w-full">
-      <p class="text-4xl text-gray-500 text-center py-4">
-        Línea de ayuda: +52 (312) 107 2845
-      </p>
-      <img src="./images/footer.png" alt="Footer Image" class="w-full" />
-    </footer>
+    <FooterComponent></FooterComponent>
   </div>
 </template>
 
 <script>
+import HeaderComponent from "./components/HeaderComponent.vue";
+import FooterComponent from "./components/FooterComponent.vue";
 export default {
+  components: {
+    HeaderComponent,
+    FooterComponent,
+  },
   data() {
     return {
       placa: "",
